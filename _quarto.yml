@@ -1,0 +1,25 @@
+project:
+  type: book
+  output-dir: docs
+
+book:
+  title: "Operational Time Series Forecasting"
+  subtitle: "A Hands-On Guide to Classical and Modern Methods in R and Python"
+  author: "Dominik Schulz"
+  date: today
+  date-format: long
+  chapters:
+    - index.qmd
+    - intro.qmd
+    - summary.qmd
+    - references.qmd
+
+bibliography: references.bib
+lang: en
+
+format:
+  html:
+    theme: cosmo
+
+editor: visual
+
