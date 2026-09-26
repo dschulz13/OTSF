@@ -12,16 +12,21 @@ book:
   chapters:
     - index.qmd
     - intro.qmd
-    - part: revisionsguide.qmd
+    - part: part_preprocessing.qmd
       chapters:
         - randomvariables.qmd
-    - part: classical.qmd
+    - part: part_modelfitting.qmd
       chapters:
         - randomvariables.qmd
-    - part: modern.qmd
+    - part: part_modeltesting.qmd
+      chapters:
+        - summary.qmd
+    - part: part_casestudies.qmd
       chapters:
         - summary.qmd
     - references.qmd
+  appendices:
+    - randomvariables.qmd
 
 bibliography: references.bib
 lang: en

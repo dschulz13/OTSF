@@ -1,4 +1,4 @@
-# Classical Methods
+# Model fitting and forecasting
 
 **Note:** This chapter is under construction.
 
