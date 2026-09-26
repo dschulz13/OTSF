@@ -41,6 +41,17 @@
     ]
   },
   {
+    "objectID": "list_of_models.html",
+    "href": "list_of_models.html",
+    "title": "3  Available models",
+    "section": "",
+    "text": "3.1 SARIMAX\nThe SARIMAX (seasonal autoregressive integrated moving average with exogenous regressors) model is a potent generalization of the ARIMA model. We assume \\(u_t\\), \\(t\\in\\mathbb{Z}\\), to be iid random variables with mean zero and finite variance \\(\\sigma_u^2\\). Then the SARIMAX process \\(\\{Y_t\\}_{t\\in\\mathbb{Z}}\\) is defined through \\[\\begin{equation}\n\\Phi(B^s)\\phi(B)(1-B)^d (1-B^s)^D(Y_t-\\mathbf{x}_t^{'}\\mathbf{\\beta})=\\Theta(B^s)\\theta(B)u_t,\n\\end{equation}\\] where \\(B\\) is the so-called backshift operator, so that for any time series variable \\(Z_t\\) we have \\(BZ_t = Z_{t-1}\\) and \\(B^sZ_t=Z_{t-s}\\). \\(s\\) is a positive integer reflecting the seasonal period. Moreover, \\(\\Phi(B^s)=1-\\sum_{i=1}^{P}\\Phi_iB^{is}\\), \\(\\Theta(B^s)=1+\\sum_{j=1}^{Q}\\Theta_jB^{js}\\), \\(\\phi(B)=1-\\sum_{l=1}^{p}\\phi_lB^{l}\\), and \\(\\theta(B)=1+\\sum_{k=1}^{q}\\theta_kB^{k}\\) are polynomials without common roots. \\(\\Phi_1,\\dots,\\Phi_P\\), \\(\\Theta_1,\\dots, \\Theta_Q\\), \\(\\phi_1,\\dots,\\phi_p\\), and \\(\\theta_1,\\dots,\\theta_q\\) are all real-valued coefficients. \\(d,D \\in \\mathbb{N}_0\\) are the orders of differencing. \\(\\mathbf{x}_t = (X_{1,t} \\hspace{2mm} X_{2,t} \\hspace{2mm} \\dots \\hspace{2mm} X_{m,t})^{'}\\) is a vector with values of \\(m\\) exogenous regressors at time \\(t\\), and \\(\\beta=(\\beta_1 \\hspace{2mm} \\dots \\hspace{2mm} \\beta_m)^{'}\\) is a corresponding vector of coefficients. A short-hand for such a process is \\(\\text{SARIMAX}(p, d, q)(P,D,Q)\\), where the terms in the brackets are the model orders.",
+    "crumbs": [
+      "Part 2: Model fitting",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Available models</span>"
+    ]
+  },
+  {
     "objectID": "summary.html",
     "href": "summary.html",
     "title": "5  Summary",

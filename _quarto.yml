@@ -17,7 +17,7 @@ book:
         - randomvariables.qmd
     - part: part_modelfitting.qmd
       chapters:
-        - randomvariables.qmd
+        - list_of_models.qmd
     - part: part_modelforecasting.qmd
       chapters:
         - randomvariables.qmd

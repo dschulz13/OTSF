@@ -6,10 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Dominik Schulz">
-<meta name="dcterms.date" content="2026-09-26">
 
-<title>Operational Time Series Forecasting</title>
+<title>3&nbsp; Available models – Operational Time Series Forecasting</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -32,7 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./intro.html" rel="next">
+<link href="./part_modelforecasting.html" rel="next">
+<link href="./part_modelfitting.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -70,6 +69,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -83,7 +111,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Preface</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./part_modelfitting.html">Part 2: Model fitting</a></li><li class="breadcrumb-item"><a href="./list_of_models.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Available models</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -110,7 +138,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Preface</span></a>
   </div>
 </li>
@@ -148,7 +176,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./list_of_models.html" class="sidebar-item-text sidebar-link">
+  <a href="./list_of_models.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Available models</span></span></a>
   </div>
 </li>
@@ -238,39 +266,23 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#preface" id="toc-preface" class="nav-link active" data-scroll-target="#preface">Preface</a>
-  <ul class="collapse">
-  <li><a href="#acknowledgments" id="toc-acknowledgments" class="nav-link" data-scroll-target="#acknowledgments">Acknowledgments</a></li>
-  </ul></li>
+  <li><a href="#sarimax" id="toc-sarimax" class="nav-link active" data-scroll-target="#sarimax"><span class="header-section-number">3.1</span> SARIMAX</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./part_modelfitting.html">Part 2: Model fitting</a></li><li class="breadcrumb-item"><a href="./list_of_models.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Available models</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Operational Time Series Forecasting</h1>
-<p class="subtitle lead">A Hands-On Guide to Classical and Modern Methods in R and Python</p>
+<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Available models</span></h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Dominik Schulz </p>
-          </div>
-  </div>
     
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">September 26, 2026</p>
-    </div>
-  </div>
   
     
   </div>
@@ -280,29 +292,27 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="preface" class="level1 unnumbered">
-<h1 class="unnumbered">Preface</h1>
 <p><strong>Note:</strong> This chapter is under construction.</p>
-<p>This is a Quarto book project started on September 26, 2026. Hence, it is a work in progress. Every unfinished chapter includes a note at the beginning to indicate the unfinished state.</p>
-<p>I welcome all readers to the (currently unfinished) first edition of <em>Operational Time Series Forecasting</em>. This book is directed at data analysts in the industry, who deal with problems related to time series forecasting. Unlike other literature, this is not an entry-level text. While theoretical ideas are usually summarized briefly throughout, they are not introduced in too much detail to ensure the focus remains on the hands-on application of the ideas. Hence it is assumed that readers have at least a solid foundation of basic time series concepts.</p>
-<p>From my experience, no currently existing literature is truly discussing the entire application pipeline of time series forecasting. Indeed, bits and pieces of it, such as cleaning steps or a selection of available models. But not the entire pipeline as a whole, where each step is logically linked to every step that came before. Therefore, this projects aims to fill this gap in the literature by providing a holistic view on how to solve common industry forecasting tasks, including</p>
+<p>To be fair, this chapter can only give a condensed overview of what kinds of models there are. Time series come with many different characteristics, including</p>
 <ul>
-<li>data downloading,</li>
-<li>data cleaning,</li>
-<li>feature selection,</li>
-<li>model selection,</li>
-<li>model fitting,</li>
-<li>forecasting, and</li>
-<li>model backtesting.</li>
+<li>trends,</li>
+<li>seasonal components,</li>
+<li>calendar effects,</li>
+<li>structural breaks,</li>
+<li>jump points,</li>
+<li>heteroskedasticity,</li>
+<li>other cyclical behavior,</li>
+<li>noise,</li>
+<li>and many more,</li>
 </ul>
-<p>In most cases, each chapter is accompanied by two separate labs, one for R and one for Python, showing how to obtain the results illustrated in the corresponding chapter’s examples.</p>
-<p>While this book is currently produced in HTML format, it is a goal to provide an equivalent PDF version in the long run.</p>
-<section id="acknowledgments" class="level2">
-<h2 class="anchored" data-anchor-id="acknowledgments">Acknowledgments</h2>
-<p>To Hương, my love and life.</p>
+<p>all of which can be but do not necessarily have to be part of an observed time series. Hence, it is only natural that there is an extensive amount of different models and approaches, usually specialized for specific purposes and situations. Moreover, the quantity to forecast also crucially restricts the pool of suitable models. Do you want to forecast the time-varying (conditional) variation of an observed series? Then models such as ARIMA are not sensible, which are for forecasting (conditional) means.</p>
+<section id="sarimax" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="sarimax"><span class="header-section-number">3.1</span> SARIMAX</h2>
+<p>The SARIMAX (seasonal autoregressive integrated moving average with exogenous regressors) model is a potent generalization of the ARIMA model. We assume <span class="math inline">\(u_t\)</span>, <span class="math inline">\(t\in\mathbb{Z}\)</span>, to be iid random variables with mean zero and finite variance <span class="math inline">\(\sigma_u^2\)</span>. Then the SARIMAX process <span class="math inline">\(\{Y_t\}_{t\in\mathbb{Z}}\)</span> is defined through <span class="math display">\[\begin{equation}
+\Phi(B^s)\phi(B)(1-B)^d (1-B^s)^D(Y_t-\mathbf{x}_t^{'}\mathbf{\beta})=\Theta(B^s)\theta(B)u_t,
+\end{equation}\]</span> where <span class="math inline">\(B\)</span> is the so-called backshift operator, so that for any time series variable <span class="math inline">\(Z_t\)</span> we have <span class="math inline">\(BZ_t = Z_{t-1}\)</span> and <span class="math inline">\(B^sZ_t=Z_{t-s}\)</span>. <span class="math inline">\(s\)</span> is a positive integer reflecting the seasonal period. Moreover, <span class="math inline">\(\Phi(B^s)=1-\sum_{i=1}^{P}\Phi_iB^{is}\)</span>, <span class="math inline">\(\Theta(B^s)=1+\sum_{j=1}^{Q}\Theta_jB^{js}\)</span>, <span class="math inline">\(\phi(B)=1-\sum_{l=1}^{p}\phi_lB^{l}\)</span>, and <span class="math inline">\(\theta(B)=1+\sum_{k=1}^{q}\theta_kB^{k}\)</span> are polynomials without common roots. <span class="math inline">\(\Phi_1,\dots,\Phi_P\)</span>, <span class="math inline">\(\Theta_1,\dots, \Theta_Q\)</span>, <span class="math inline">\(\phi_1,\dots,\phi_p\)</span>, and <span class="math inline">\(\theta_1,\dots,\theta_q\)</span> are all real-valued coefficients. <span class="math inline">\(d,D \in \mathbb{N}_0\)</span> are the orders of differencing. <span class="math inline">\(\mathbf{x}_t = (X_{1,t} \hspace{2mm} X_{2,t} \hspace{2mm} \dots \hspace{2mm} X_{m,t})^{'}\)</span> is a vector with values of <span class="math inline">\(m\)</span> exogenous regressors at time <span class="math inline">\(t\)</span>, and <span class="math inline">\(\beta=(\beta_1 \hspace{2mm} \dots \hspace{2mm} \beta_m)^{'}\)</span> is a corresponding vector of coefficients. A short-hand for such a process is <span class="math inline">\(\text{SARIMAX}(p, d, q)(P,D,Q)\)</span>, where the terms in the brackets are the model orders.</p>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
@@ -728,10 +738,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="./part_modelfitting.html" class="pagination-link" aria-label="Part 2: Model fitting">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Part 2: Model fitting</span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./intro.html" class="pagination-link" aria-label="Introduction">
-        <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./part_modelforecasting.html" class="pagination-link" aria-label="Part 3: Forecast production">
+        <span class="nav-page-text">Part 3: Forecast production</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
