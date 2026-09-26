@@ -1,4 +1,6 @@
 # References {.unnumbered}
 
+**Note:** This chapter is under construction.
+
 ::: {#refs}
 :::

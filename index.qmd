@@ -1,9 +1,5 @@
 # Preface {.unnumbered}
 
-This is a Quarto book.
+This is a Quarto book project started on September 26, 2026. Hence, it is a work in progress. Every unfinished chapter includes a note at the beginning to indicate the unfinished state.
 
-To learn more about Quarto books visit <https://quarto.org/docs/books>.
-
-```{r}
-1 + 1
-```
+**Note:** This chapter is under construction.

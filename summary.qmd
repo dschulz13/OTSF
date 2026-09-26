@@ -1,5 +1,7 @@
 # Summary
 
+**Note:** This chapter is under construction.
+
 In summary, this book has no content whatsoever.
 
 ```{r}
