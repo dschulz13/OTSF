@@ -267,6 +267,7 @@ window.Quarto = {
    
   <ul>
   <li><a href="#sarimax" id="toc-sarimax" class="nav-link active" data-scroll-target="#sarimax"><span class="header-section-number">3.1</span> SARIMAX</a></li>
+  <li><a href="#farima" id="toc-farima" class="nav-link" data-scroll-target="#farima"><span class="header-section-number">3.2</span> FARIMA</a></li>
   </ul>
 </nav>
     </div>
@@ -311,6 +312,18 @@ window.Quarto = {
 <p>The SARIMAX (seasonal autoregressive integrated moving average with exogenous regressors) model is a potent generalization of the ARIMA model. We assume <span class="math inline">\(u_t\)</span>, <span class="math inline">\(t\in\mathbb{Z}\)</span>, to be iid random variables with mean zero and finite variance <span class="math inline">\(\sigma_u^2\)</span>. Then the SARIMAX process <span class="math inline">\(\{Y_t\}_{t\in\mathbb{Z}}\)</span> is defined through <span class="math display">\[\begin{equation}
 \Phi(B^s)\phi(B)(1-B)^d (1-B^s)^D(Y_t-\mathbf{x}_t^{'}\mathbf{\beta})=\Theta(B^s)\theta(B)u_t,
 \end{equation}\]</span> where <span class="math inline">\(B\)</span> is the so-called backshift operator, so that for any time series variable <span class="math inline">\(Z_t\)</span> we have <span class="math inline">\(BZ_t = Z_{t-1}\)</span> and <span class="math inline">\(B^sZ_t=Z_{t-s}\)</span>. <span class="math inline">\(s\)</span> is a positive integer reflecting the seasonal period. Moreover, <span class="math inline">\(\Phi(B^s)=1-\sum_{i=1}^{P}\Phi_iB^{is}\)</span>, <span class="math inline">\(\Theta(B^s)=1+\sum_{j=1}^{Q}\Theta_jB^{js}\)</span>, <span class="math inline">\(\phi(B)=1-\sum_{l=1}^{p}\phi_lB^{l}\)</span>, and <span class="math inline">\(\theta(B)=1+\sum_{k=1}^{q}\theta_kB^{k}\)</span> are polynomials without common roots. <span class="math inline">\(\Phi_1,\dots,\Phi_P\)</span>, <span class="math inline">\(\Theta_1,\dots, \Theta_Q\)</span>, <span class="math inline">\(\phi_1,\dots,\phi_p\)</span>, and <span class="math inline">\(\theta_1,\dots,\theta_q\)</span> are all real-valued coefficients. <span class="math inline">\(d,D \in \mathbb{N}_0\)</span> are the orders of differencing. <span class="math inline">\(\mathbf{x}_t = (X_{1,t} \hspace{2mm} X_{2,t} \hspace{2mm} \dots \hspace{2mm} X_{m,t})^{'}\)</span> is a vector with values of <span class="math inline">\(m\)</span> exogenous regressors at time <span class="math inline">\(t\)</span>, and <span class="math inline">\(\beta=(\beta_1 \hspace{2mm} \dots \hspace{2mm} \beta_m)^{'}\)</span> is a corresponding vector of coefficients. A short-hand for such a process is <span class="math inline">\(\text{SARIMAX}(p, d, q)(P,D,Q)\)</span>, where the terms in the brackets are the model orders.</p>
+<p>This model nests the standard <span class="math inline">\(\text{ARIMAX}(p, d, q)\)</span> for <span class="math inline">\(P=Q=D=0\)</span>: <span class="math display">\[\begin{equation}
+\phi(B)(1-B)^d (Y_t - \mathbf{x}_t^{'}\mathbf{\beta}) = \theta(B)u_t.
+\end{equation}\]</span> Note that one can include a linear time trend by setting the <span class="math inline">\(r\)</span>th regressor, <span class="math inline">\(r\in\{1,\dots,m\}\)</span>, to <span class="math inline">\(X_{r,t}=t\)</span>, which corresponds to a constant term in the differenced series.</p>
+<p>A basic <span class="math inline">\(\text{ARMA}(p, q)\)</span> model (with non-zero mean <span class="math inline">\(\mu \in \mathbb{R}\)</span>) is then simply given by <span class="math display">\[\begin{equation}
+\phi(B) (Y_t - \mu) = \theta(B)u_t.
+\end{equation}\]</span> This model is without differencing.</p>
+</section>
+<section id="farima" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="farima"><span class="header-section-number">3.2</span> FARIMA</h2>
+<p>Sometimes an observed time series returns very slowly to its long-term mean over time. In such cases, an ARMA model may not be able to capture this persistence effectively, while a full differencing step as with an ARIMA with <span class="math inline">\(d=1\)</span> would drop too much useful information. In such a scenario, we are very likely dealing with a case of long-range dependence, also called <strong>long memory</strong>. A natural extension of an ARMA is then a fractionally integrated ARMA (FARIMA), which reads <span class="math display">\[\begin{equation}
+\phi(B)(1-B)^d (Y_t - \mu) = \theta(B)u_t.
+\end{equation}\]</span> While this formula is similar to that of an ARIMA, here we assume that <span class="math inline">\(d\in(0, 0.5)\)</span>. Therefore, <span class="math inline">\((1-B)^d\)</span> does not represent a number of full integrations but a fractional integration.</p>
 
 
 </section>
