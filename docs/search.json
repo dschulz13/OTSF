@@ -26,7 +26,7 @@
     "section": "",
     "text": "Note: This chapter is under construction.\nThis is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\n1 + 1\n\n[1] 2\n\n\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
     "crumbs": [
-      "Pre-processing steps",
+      "Part 1: Pre-processing steps",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Revision Guide Statistics</span>"
     ]
   },
@@ -37,7 +37,7 @@
     "section": "",
     "text": "Note: This chapter is under construction.\nIn summary, this book has no content whatsoever.\n\n1 + 1\n\n[1] 2",
     "crumbs": [
-      "Model testing",
+      "Part 3: Model testing",
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Summary</span>"
     ]
   },
@@ -54,41 +54,41 @@
   {
     "objectID": "part_preprocessing.html",
     "href": "part_preprocessing.html",
-    "title": "Pre-processing steps",
+    "title": "Part 1: Pre-processing steps",
     "section": "",
     "text": "Note: This chapter is under construction.\nThis is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\n1 + 1\n\n[1] 2\n\n\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
     "crumbs": [
-      "Pre-processing steps"
+      "Part 1: Pre-processing steps"
     ]
   },
   {
     "objectID": "part_modelfitting.html",
     "href": "part_modelfitting.html",
-    "title": "Model fitting and forecasting",
+    "title": "Part 2: Model fitting and forecasting",
     "section": "",
     "text": "Note: This chapter is under construction.\nThis is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\n1 + 1\n\n[1] 2\n\n\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
     "crumbs": [
-      "Model fitting and forecasting"
+      "Part 2: Model fitting and forecasting"
     ]
   },
   {
     "objectID": "part_modeltesting.html",
     "href": "part_modeltesting.html",
-    "title": "Model testing",
+    "title": "Part 3: Model testing",
     "section": "",
     "text": "Note: This chapter is under construction.\nThis is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\n1 + 1\n\n[1] 2\n\n\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
     "crumbs": [
-      "Model testing"
+      "Part 3: Model testing"
     ]
   },
   {
     "objectID": "part_casestudies.html",
     "href": "part_casestudies.html",
-    "title": "Full cases studies",
+    "title": "Part 4: Full cases studies",
     "section": "",
     "text": "Note: This chapter is under construction.\nThis is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\n1 + 1\n\n[1] 2\n\n\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
     "crumbs": [
-      "Full cases studies"
+      "Part 4: Full cases studies"
     ]
   }
 ]

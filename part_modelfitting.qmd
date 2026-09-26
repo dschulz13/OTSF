@@ -1,4 +1,4 @@
-# Model fitting and forecasting
+# Part 2: Model fitting and forecasting
 
 **Note:** This chapter is under construction.
 
