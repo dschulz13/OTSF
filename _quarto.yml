@@ -18,6 +18,9 @@ book:
     - part: part_modelfitting.qmd
       chapters:
         - randomvariables.qmd
+    - part: part_modelforecasting.qmd
+      chapters:
+        - randomvariables.qmd
     - part: part_modeltesting.qmd
       chapters:
         - summary.qmd
@@ -34,6 +37,7 @@ lang: en
 format:
   html:
     theme: cosmo
+    css: styles.css
 
 editor: visual
 

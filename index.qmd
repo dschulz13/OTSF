@@ -1,5 +1,25 @@
 # Preface {.unnumbered}
 
+**Note:** This chapter is under construction.
+
 This is a Quarto book project started on September 26, 2026. Hence, it is a work in progress. Every unfinished chapter includes a note at the beginning to indicate the unfinished state.
 
-**Note:** This chapter is under construction.
+I welcome all readers to the (currently unfinished) first edition of *Operational Time Series Forecasting*. This book is directed at data analysts in the industry, who deal with problems related to time series forecasting. Unlike other literature, this is not an entry-level text. While theoretical ideas are usually summarized briefly throughout, they are not introduced in too much detail to ensure the focus remains on the hands-on application of the ideas. Hence it is assumed that readers have at least a solid foundation of basic time series concepts.
+
+From my experience, no currently existing literature is truly discussing the entire application pipeline of time series forecasting. Indeed, bits and pieces of it, such as cleaning steps or a selection of available models. But not the entire pipeline as a whole, where each step is logically linked to every step that came before. Therefore, this projects aims to fill this gap in the literature by providing a holistic view on how to solve common industry forecasting tasks, including
+
+- data downloading,
+- data cleaning,
+- feature selection,
+- model selection,
+- model fitting,
+- forecasting, and
+- model backtesting.
+
+In most cases, each chapter is accompanied by two separate labs, one for R and one for Python, showing how to obtain the results illustrated in the corresponding chapter's examples.
+
+While this book is currently produced in HTML format, it is a goal to provide an equivalent PDF version in the long run.
+
+## Acknowledgments
+
+To H&#432;&#417;ng, my love and life.

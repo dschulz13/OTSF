@@ -4,7 +4,17 @@
     "href": "index.html",
     "title": "Operational Time Series Forecasting",
     "section": "",
-    "text": "Preface\nThis is a Quarto book project started on September 26, 2026. Hence, it is a work in progress. Every unfinished chapter includes a note at the beginning to indicate the unfinished state.\nNote: This chapter is under construction.",
+    "text": "Preface\nNote: This chapter is under construction.\nThis is a Quarto book project started on September 26, 2026. Hence, it is a work in progress. Every unfinished chapter includes a note at the beginning to indicate the unfinished state.\nI welcome all readers to the (currently unfinished) first edition of Operational Time Series Forecasting. This book is directed at data analysts in the industry, who deal with problems related to time series forecasting. Unlike other literature, this is not an entry-level text. While theoretical ideas are usually summarized briefly throughout, they are not introduced in too much detail to ensure the focus remains on the hands-on application of the ideas. Hence it is assumed that readers have at least a solid foundation of basic time series concepts.\nFrom my experience, no currently existing literature is truly discussing the entire application pipeline of time series forecasting. Indeed, bits and pieces of it, such as cleaning steps or a selection of available models. But not the entire pipeline as a whole, where each step is logically linked to every step that came before. Therefore, this projects aims to fill this gap in the literature by providing a holistic view on how to solve common industry forecasting tasks, including\nIn most cases, each chapter is accompanied by two separate labs, one for R and one for Python, showing how to obtain the results illustrated in the corresponding chapter’s examples.\nWhile this book is currently produced in HTML format, it is a goal to provide an equivalent PDF version in the long run.",
+    "crumbs": [
+      "Preface"
+    ]
+  },
+  {
+    "objectID": "index.html#acknowledgments",
+    "href": "index.html#acknowledgments",
+    "title": "Operational Time Series Forecasting",
+    "section": "Acknowledgments",
+    "text": "Acknowledgments\nTo Hương, my love and life.",
     "crumbs": [
       "Preface"
     ]
@@ -33,12 +43,12 @@
   {
     "objectID": "summary.html",
     "href": "summary.html",
-    "title": "4  Summary",
+    "title": "5  Summary",
     "section": "",
     "text": "Note: This chapter is under construction.\nIn summary, this book has no content whatsoever.\n\n1 + 1\n\n[1] 2",
     "crumbs": [
-      "Part 3: Model testing",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Summary</span>"
+      "Part 4: Model testing",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Summary</span>"
     ]
   },
   {
@@ -64,31 +74,41 @@
   {
     "objectID": "part_modelfitting.html",
     "href": "part_modelfitting.html",
-    "title": "Part 2: Model fitting and forecasting",
+    "title": "Part 2: Model fitting",
     "section": "",
     "text": "Note: This chapter is under construction.\nThis is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\n1 + 1\n\n[1] 2\n\n\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
     "crumbs": [
-      "Part 2: Model fitting and forecasting"
+      "Part 2: Model fitting"
+    ]
+  },
+  {
+    "objectID": "part_modelforecasting.html",
+    "href": "part_modelforecasting.html",
+    "title": "Part 3: Forecast production",
+    "section": "",
+    "text": "Note: This chapter is under construction.\nThis is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\n1 + 1\n\n[1] 2\n\n\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
+    "crumbs": [
+      "Part 3: Forecast production"
     ]
   },
   {
     "objectID": "part_modeltesting.html",
     "href": "part_modeltesting.html",
-    "title": "Part 3: Model testing",
+    "title": "Part 4: Model testing",
     "section": "",
     "text": "Note: This chapter is under construction.\nThis is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\n1 + 1\n\n[1] 2\n\n\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
     "crumbs": [
-      "Part 3: Model testing"
+      "Part 4: Model testing"
     ]
   },
   {
     "objectID": "part_casestudies.html",
     "href": "part_casestudies.html",
-    "title": "Part 4: Full cases studies",
+    "title": "Part 5: Full cases studies",
     "section": "",
     "text": "Note: This chapter is under construction.\nThis is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\n1 + 1\n\n[1] 2\n\n\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
     "crumbs": [
-      "Part 4: Full cases studies"
+      "Part 5: Full cases studies"
     ]
   }
 ]
