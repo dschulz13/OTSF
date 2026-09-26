@@ -8,10 +8,19 @@ book:
   author: "Dominik Schulz"
   date: today
   date-format: long
+  page-footer: "Copyright 2026, Dominik Schulz"
   chapters:
     - index.qmd
     - intro.qmd
-    - summary.qmd
+    - part: revisionsguide.qmd
+      chapters:
+        - randomvariables.qmd
+    - part: classical.qmd
+      chapters:
+        - randomvariables.qmd
+    - part: modern.qmd
+      chapters:
+        - summary.qmd
     - references.qmd
 
 bibliography: references.bib

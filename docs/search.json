@@ -20,13 +20,25 @@
     ]
   },
   {
+    "objectID": "randomvariables.html",
+    "href": "randomvariables.html",
+    "title": "2  Revision Guide Statistics",
+    "section": "",
+    "text": "Note: This chapter is under construction.\nThis is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\n1 + 1\n\n[1] 2\n\n\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
+    "crumbs": [
+      "Revision Guide Statistics",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Revision Guide Statistics</span>"
+    ]
+  },
+  {
     "objectID": "summary.html",
     "href": "summary.html",
-    "title": "2  Summary",
+    "title": "4  Summary",
     "section": "",
     "text": "Note: This chapter is under construction.\nIn summary, this book has no content whatsoever.\n\n1 + 1\n\n[1] 2",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Summary</span>"
+      "Modern Methods",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Summary</span>"
     ]
   },
   {
@@ -37,6 +49,36 @@
     "text": "Note: This chapter is under construction.\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
     "crumbs": [
       "References"
+    ]
+  },
+  {
+    "objectID": "revisionsguide.html",
+    "href": "revisionsguide.html",
+    "title": "Revision Guide Statistics",
+    "section": "",
+    "text": "Note: This chapter is under construction.\nThis is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\n1 + 1\n\n[1] 2\n\n\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
+    "crumbs": [
+      "Revision Guide Statistics"
+    ]
+  },
+  {
+    "objectID": "classical.html",
+    "href": "classical.html",
+    "title": "Classical Methods",
+    "section": "",
+    "text": "Note: This chapter is under construction.\nThis is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\n1 + 1\n\n[1] 2\n\n\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
+    "crumbs": [
+      "Classical Methods"
+    ]
+  },
+  {
+    "objectID": "modern.html",
+    "href": "modern.html",
+    "title": "Modern Methods",
+    "section": "",
+    "text": "Note: This chapter is under construction.\nThis is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\n1 + 1\n\n[1] 2\n\n\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
+    "crumbs": [
+      "Modern Methods"
     ]
   }
 ]
